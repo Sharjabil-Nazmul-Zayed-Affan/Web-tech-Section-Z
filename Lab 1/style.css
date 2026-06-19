@@ -1,0 +1,49 @@
+body {
+    font-family: "Times New Roman", serif;
+}
+
+table {
+    width: 60%;
+    margin: 12px auto 30px;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 4px 8px;
+    text-align: left;
+}
+th {
+    background-color: #0b5d82;
+    color: white;
+}
+td {
+    background-color: #DAE9F7;
+}
+
+h1 {text-align: center;}
+
+h3{
+    margin: 12px 0px 30px 100px;
+}
+
+.ContactBox {
+    align-items: center;
+    margin: 30px 350px 0px 350px;
+    background-color: #b9e3bb;
+    border-radius: 50px;
+    padding: 40px 20px;
+}
+
+input{
+    margin: 0px 0px 00px 50px;
+    padding: 10px 120px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+.inputMessage{
+    align-items: start;
+    margin: 0px 0px 00px 30px;
+    padding: 30px 120px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}

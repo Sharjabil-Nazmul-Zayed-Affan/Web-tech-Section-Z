@@ -19,9 +19,15 @@ fieldset{
 .Button{
     color: white;
     border-radius: 10px;
-    margin: 10px 100px;
+    margin: 10px 0px 0px 650px;
     padding: 10px;
     background-color: blueviolet;
+}
+.Button1{
+    border-radius: 10px;
+    margin: 10px 50px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
 }
 table{
     margin: 10px 200px;

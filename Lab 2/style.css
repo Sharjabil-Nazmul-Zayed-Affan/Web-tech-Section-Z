@@ -1,7 +1,7 @@
 input{
     margin-top: 10px;
     margin-right: 50px;
-    padding: 5px 20px 5px 0px;
+    padding: 5px 200px 5px 0px;
 
 }
 
@@ -14,4 +14,15 @@ legend{
 fieldset{
     border: 3px solid blueviolet;
     border-radius: 10px;
+    margin: 10px 100px;
+}
+.Button{
+    color: white;
+    border-radius: 10px;
+    margin: 10px 100px;
+    padding: 10px;
+    background-color: blueviolet;
+}
+table{
+    margin: 10px 200px;
 }

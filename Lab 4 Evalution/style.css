@@ -1,9 +1,21 @@
-button{
+.label{
     display: flex;
-    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
 
-.th,.td{
-    border: 1px solid black;
-    padding: 5px 10px;
+.container{
+    margin: 0px 500px;
+    background-color: rgb(255, 255, 245);
+}
+
+h6{
+    display: flex;
+    margin-left: 50px;
+    color: rgb(255, 0, 0);
+}
+
+button{
+    display: flex;
+    margin: 0% 45%;
 }

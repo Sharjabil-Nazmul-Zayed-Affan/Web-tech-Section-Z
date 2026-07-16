@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        
+            <fieldset>
+                <legend>Students Registration</legend>
+                <form onsubmit="return validation();">
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" id="fname" /></td>
+                        <td><p id="fnameError"></p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" id="lname" /></td>
+                        <td><p id="lnameError"></p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Student Id:</td>
+                        <td><input type="text" id="sid" /></td>
+                        <td><p id="idError"></p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" id="email" /></td>
+                        <td><p id="emailError"></p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Credit Completed:</td>
+                        <td><input type="number" id="credit" /></td>
+                        <td><p id="creditError"></p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Department:</td>
+                        <td>
+                            <select id="dept">
+                                <option value="cse">CSE</option>
+                                <option value="eee">EEE</option>
+                                <option value="ipe">IPE</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button>Submit</button>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table >
+                    <tr>
+                        <th class="th">First name</th>
+                        <th class="th">Last name</th>
+                        <th class="th">Student ID</th>
+                        <th class="th">email</th>
+                        <th class="th">Credit complete</th>
+                        <th class="th">department</th>
+                    </tr>
+                    
+                </table>
+                </form>
+            </fieldset>
+        
+        
+        
+    </body>
+</html>

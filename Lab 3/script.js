@@ -1,47 +1,30 @@
-let totalCount = 0;
-
-function registration() {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-
-  let hasNameError = true;
-  let hasEmailError = true;
-  if (!name) {
-    document.getElementById("nameError").innerHTML = "Name can not be empty";
-    document.getElementById("nameError").style.color = "red";
-    hasNameError = true;
-  } else if (name.length < 3) {
-    document.getElementById("nameError").innerHTML =
-      "Name must be at least 3 char";
-    document.getElementById("nameError").style.color = "red";
-    hasNameError = true;
+function calculate() {
+  const price = document.getElementById("price").value;
+  const quantity = document.getElementById("quantity").value;
+  if (quantity <= 0) {
+    document.getElementById("quantityError").innerHTML =
+      "Quantity must be greater than 0";
+    document.getElementById("quantityError").style.color = "red";
+    document.getElementById("payable").value = 0;
+    document.getElementById("button").style.display = "none";
   } else {
-    document.getElementById("nameError").innerHTML = "";
-    hasNameError = false;
+    document.getElementById("quantityError").innerHTML = "";
+    document.getElementById("button").style.display = "inline-block";
   }
+  return false;
+}
 
-  if (!email) {
-    document.getElementById("emailError").innerHTML =
-      "Email is a required fireld";
-    document.getElementById("nameError").style.color = "red";
-    hasEmailError = true;
-  } else if (!email.includes("@")) {
-    document.getElementById("emailError").innerHTML =
-      "Please provide a valid email address";
-    document.getElementById("nameError").style.color = "red";
-    hasEmailError = true;
-  } else {
-    document.getElementById("emailError").innerHTML = "";
-    hasEmailError = false;
-  }
+function check() {
+  const price = document.getElementById("price").value;
+  const quantity = document.getElementById("quantity").value;
+  const payable = price * quantity;
+  document.getElementById("payable").value = payable;
+  return false;
+}
 
-  if (!hasNameError && !hasEmailError) {
-    document.getElementById("totalRegistrations").innerHTML = ++totalCount;
-  }
-
-  if(totalCount >= 5){
-    document.getElementById("name").disabled = true;
-    document.getElementById("email").disabled = true;
-  }
+function clearForm() {
+  console.log("from clear function");
+  document.getElementById("quantity").value = 0;
+  document.getElementById("payable").value = 0;
   return false;
 }
